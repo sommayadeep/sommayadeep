@@ -13,8 +13,8 @@ markdown
 <br/>
 
 <!-- Social Badges -->
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sommayadeepsaha)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sommayadeepsaha)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]([https://linkedin.com/in/sommayadeepsaha](https://www.linkedin.com/in/sommayadeep-saha-127baa335/))
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)]([https://github.com/sommayadeepsaha](https://github.com/sommayadeep))
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sommayadeepsaha@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-00D4FF?style=for-the-badge&logo=firefox&logoColor=white)](#)
 
