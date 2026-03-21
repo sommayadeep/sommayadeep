@@ -3,7 +3,7 @@ markdown
 <div align="center">
 
 <!-- Animated Header Banner -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00d4ff,100:0d1117&height=200&section=header&text=Soumyadeep%20Saha&fontSize=52&fontColor=ffffff&fontAlignY=35&desc=Engineering%20intelligence%20from%20data%2C%20building%20experiences%20from%20code&descSize=16&descAlignY=58&descColor=00d4ff&animation=fadeIn" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00d4ff,100:0d1117&height=200&section=header&text=Sommayadeep%20Saha&fontSize=52&fontColor=ffffff&fontAlignY=35&desc=Engineering%20intelligence%20from%20data%2C%20building%20experiences%20from%20code&descSize=16&descAlignY=58&descColor=00d4ff&animation=fadeIn" />
 
 <!-- Typing Animation -->
 <a href="https://git.io/typing-svg">
