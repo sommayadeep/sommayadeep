@@ -22,9 +22,8 @@
 <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 <a href="https://github.com/sommayadeep">
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-<a href="mailto:sommayadeepsaha@gmail.com?subject=Regarding%20Opportunity&body=Hello%20Sommayadeep">
-  <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
+<a href="mailto:sommayadeepsaha@gmail.com">
+<img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 <a href="https://deepsfolio.vercel.app">
 <img src="https://img.shields.io/badge/Portfolio-7c3aed?style=for-the-badge&logo=vercel&logoColor=white"/></a>
 
@@ -49,40 +48,53 @@
 
 ## 👾 About Me
 
-```python
-#!/usr/bin/env python3
-# ╔══════════════════════════════════════════════════════════════╗
-# ║              SOMMAYADEEP SAHA — SYSTEM BOOT v2.0            ║
-# ╚══════════════════════════════════════════════════════════════╝
+<div align="center">
 
-class SommayadeepSaha:
+<!-- LINE 1: Boot message -->
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=15&pause=99999&color=22C55E&center=true&vCenter=true&width=700&height=30&lines=~%2F+sommayadeep+%24+./boot_system.sh+--init)](https://git.io/typing-svg)
 
-    name        = "Sommayadeep Saha"
-    title       = "AI/ML Engineer  ×  Full Stack Dev  ×  Data Scientist"
-    location    = "India 🇮🇳"
-    portfolio   = "https://deepsfolio.vercel.app"
-    email       = "sommayadeepsaha@gmail.com"
+<!-- LINE 2: Loading animation -->
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=14&pause=2500&color=C4B5FD&center=true&vCenter=true&width=700&height=25&lines=▶+Loading+identity...+✓;▶+Injecting+skills...+✓;▶+Calibrating+AI+modules...+✓;▶+Connecting+to+GitHub...+✓;▶+SYSTEM+BOOT+COMPLETE+🚀)](https://git.io/typing-svg)
 
-    skills = {
-        "AI / ML"   : ["PyTorch", "TensorFlow", "Scikit-Learn", "HuggingFace", "LangChain"],
-        "Data"      : ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Spark"],
-        "Frontend"  : ["React", "Next.js", "TypeScript", "TailwindCSS"],
-        "Backend"   : ["Node.js", "FastAPI", "Flask", "PostgreSQL", "MongoDB"],
-        "DevOps"    : ["Docker", "Git", "Linux", "MLflow"],
-    }
+<br/>
 
-    achievement = "🌐 Google Competition — Qualifier Round, TOP 15,000 GLOBALLY 🏆"
-    currently   = "Building LLM-powered apps & RAG pipelines"
-    learning    = ["LLMs", "MLOps", "Diffusion Models", "System Design"]
-    open_to     = ["Internships 💼", "Collaborations 🤝", "Open Source 🌐"]
+<!-- INFO CARDS -->
+<table>
+<tr>
+<td align="center" width="33%">
 
-    def say_hi(self):
-        print("Thanks for visiting! Let's build something amazing together 🚀")
+**`[ IDENTITY ]`**
 
-me = SommayadeepSaha()
-me.say_hi()
-# Output → Thanks for visiting! Let's build something amazing together 🚀
-```
+![Name](https://img.shields.io/badge/Name-Sommayadeep_Saha-c4b5fd?style=flat-square&labelColor=0d0630)
+![Role](https://img.shields.io/badge/Role-AI%2FML_×_FullStack_×_DataSci-7c3aed?style=flat-square&labelColor=0d0630)
+![Location](https://img.shields.io/badge/Location-India_🇮🇳-c4b5fd?style=flat-square&labelColor=0d0630)
+![Portfolio](https://img.shields.io/badge/Web-deepsfolio.vercel.app-7c3aed?style=flat-square&labelColor=0d0630&logo=vercel&logoColor=white)
+
+</td>
+<td align="center" width="33%">
+
+**`[ SKILLS ]`**
+
+![AI](https://img.shields.io/badge/🤖_AI%2FML-PyTorch_·_TensorFlow-c4b5fd?style=flat-square&labelColor=0d0630)
+![Data](https://img.shields.io/badge/📊_Data-Pandas_·_NumPy_·_Spark-7c3aed?style=flat-square&labelColor=0d0630)
+![Frontend](https://img.shields.io/badge/🌐_Frontend-React_·_Next.js-c4b5fd?style=flat-square&labelColor=0d0630)
+![Backend](https://img.shields.io/badge/⚙️_Backend-Node.js_·_FastAPI-7c3aed?style=flat-square&labelColor=0d0630)
+
+</td>
+<td align="center" width="33%">
+
+**`[ STATUS ]`**
+
+![Achievement](https://img.shields.io/badge/🏆_Google-Top_15%2C000_Globally-gold?style=flat-square&labelColor=0d0630)
+![Building](https://img.shields.io/badge/🔥_Building-LLM_Apps_%26_RAG-22c55e?style=flat-square&labelColor=0d0630)
+![Learning](https://img.shields.io/badge/📚_Learning-LLMs_·_MLOps-c4b5fd?style=flat-square&labelColor=0d0630)
+![Open](https://img.shields.io/badge/💼_Open_To-Internships_%26_Collabs-7c3aed?style=flat-square&labelColor=0d0630)
+
+</td>
+</tr>
+</table>
+
+</div>
 
 ---
 
