@@ -179,7 +179,7 @@
 
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=sommayadeep&show_icons=true&theme=tokyonight&hide_border=true&title_color=c4b5fd&icon_color=c4b5fd&text_color=ffffff&bg_color=0d0630&border_radius=10&count_private=true&include_all_commits=true&cache_seconds=1800"/>
 &nbsp;
-<img height="180em" src="https://github-readme-streak-stats.herokuapp.com?user=sommayadeep&theme=tokyonight&hide_border=true&ring=c4b5fd&fire=ff6b6b&currStreakLabel=c4b5fd&background=0d0630&border_radius=10"/>
+<img height="180em" src="https://streak-stats.demolab.com?user=sommayadeep&theme=tokyonight&hide_border=true&ring=c4b5fd&fire=ff6b6b&currStreakLabel=c4b5fd&background=0d0630&border_radius=10"/>
 
 <br/><br/>
 
