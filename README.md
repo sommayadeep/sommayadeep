@@ -183,7 +183,7 @@
 
 <br/><br/>
 
-<img height="200em" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=sommayadeep&layout=donut&theme=tokyonight&hide_border=true&title_color=c4b5fd&text_color=ffffff&bg_color=0d0630&border_radius=10&langs_count=8"/>
+<div align="center">   <img width="95%" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=sommayadeep&layout=compact&theme=tokyonight&hide_border=true&title_color=c4b5fd&text_color=ffffff&bg_color=0d0630&langs_count=8"/> </div>
 
 </div>
 
