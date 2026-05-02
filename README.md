@@ -1,67 +1,100 @@
 <div align="center">
 
-# 👑 SOMMAYADEEP SAHA
-## 🌌 SYSTEM ARCHITECT & FULL-STACK INNOVATOR
-**Crafting High-Performance Distributed Systems & Immersive Web Experiences**
+<!-- ANIMATED FLOATING HEADER -->
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=45&pause=1000&color=00FFD1&center=true&vCenter=true&width=1000&height=100&lines=SOMMAYADEEP+SAHA;SYSTEM+ARCHITECT+v2.6;ENCRYPTING+REALITY...;" />
 
-<br>
-
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=800&size=35&pause=1000&color=00FFD1&center=true&vCenter=true&width=1000&height=70&lines=MASTERING+MODERN+FULL-STACK;ARCHITECTING+CLOUD+SOLUTIONS;BUILDING+THE+FUTURE+OF+WEB+3.0;WELCOME+TO+THE+ELITE+STATION;)](https://git.io/typing-svg)
-
----
-
-## ⚡ PROFESSIONAL SYNOPSIS
-> "I am a results-driven Software Engineer specializing in building scalable digital infrastructure. My approach combines rigorous backend logic with fluid frontend aesthetics to deliver enterprise-grade applications."
-
----
-
-## 🛠 TECH UNIVERSE & TOOLING
-| CATEGORY | TECHNOLOGIES |
-| :--- | :--- |
-| **Frontend Core** | <img src="https://skillicons.dev/icons?i=react,nextjs,ts,tailwind,threejs,redux,sass" /> |
-| **Backend & Logic** | <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,postgresql,go,py,solidity" /> |
-| **DevOps & Cloud** | <img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,nginx,linux,terraform" /> |
-| **Engineering Tools** | <img src="https://skillicons.dev/icons?i=git,github,figma,postman,jest,vscode" /> |
-
----
-
-## 📈 THE COMMANDER'S METRICS
-<!-- Replaced the failing image stats with a clean, unbreakable Markdown table -->
-| 🏆 Global Influence | 💻 Code Output | 🔥 Current Momentum |
-| :---: | :---: | :---: |
-| **Top Tier Developer** | **Consistent Contributor** | **High-Activity Streak** |
-| Architecting the Web | Pushing Code Daily | Unstoppable Drive |
-
-<br>
-
-<!-- Using the graphic we KNOW is working perfectly on your profile -->
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sommayadeep&theme=dark" width="100%" />
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%" height="4px" />
 </p>
 
 ---
 
-## 🐍 CONTRIBUTION FLOW
-<img src="https://raw.githubusercontent.com/sommayadeep/sommayadeep/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation" width="100%" />
-
----
-
-## 📂 FEATURED DEPLOYMENTS
-| Project | Status | Tech Stack | Link |
-| :--- | :---: | :--- | :--- |
-| **Enterprise SaaS Engine** | 🟢 Active | React • Node • AWS | [View Repo](#) |
-| **AI System Architect** | 🟡 Beta | Python • LangChain • TS | [View Repo](#) |
-| **Web3 DeFi Terminal** | 🟢 Active | Solidity • Next.js • Go | [View Repo](#) |
-
----
-
-## 📡 GLOBAL UPLINK & CONNECTIVITY
+## ⚡ SYSTEM STATUS: OPERATIONAL
 <p align="center">
-<a href="https://linkedin.com/in/sommayadeep-saha"><img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" height="50" /></a>
-<a href="mailto:sommayadeepsaha@gmail.com"><img src="https://img.shields.io/badge/EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white" height="50" /></a>
-<a href="https://twitter.com/sommayadeep"><img src="https://img.shields.io/badge/TWITTER-000000?style=for-the-badge&logo=x&logoColor=white" height="50" /></a>
+  <img src="https://img.shields.io/badge/FLUX_CAPACITOR-ACTIVE-00FFD1?style=for-the-badge&logo=probot&logoColor=black" />
+  <img src="https://img.shields.io/badge/UPTIME-100%25-00FFD1?style=for-the-badge&logo=statuspage&logoColor=black" />
+  <img src="https://img.shields.io/badge/SECURITY-LEVEL_A-00FFD1?style=for-the-badge&logo=fortinet&logoColor=black" />
 </p>
 
-**"Code is poetry written for machines."**
+---
+
+## 🛠️ NEURAL TECH STACK
+<!-- Animated Skill Icons that "pulse" or pop when hovered -->
+<p align="center">
+  <a href="#"><img src="https://skillicons.dev/icons?i=react,nextjs,ts,tailwind,threejs,nodejs,express,mongodb,postgres,go,docker,aws,kubernetes,git,figma,py&perline=8" /></a>
+</p>
+
+---
+
+## 📊 LIVE DATALINK (SYNCED)
+<table border="0">
+  <tr>
+    <td width="50%">
+      <!-- Animated Activity Graph -->
+      <img src="https://github-readme-activity-graph.vercel.app/graph?username=sommayadeep&bg_color=0D1117&color=00FFD1&line=00FFD1&point=FFFFFF&area=true&hide_border=true" width="100%" />
+    </td>
+    <td width="50%">
+      <!-- Top Languages with Neon Theme -->
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sommayadeep&layout=compact&theme=vision-glow&hide_border=true&title_color=00FFD1" width="100%" />
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sommayadeep&theme=vision-glow&fire=00FFD1&currStreakNum=00FFD1&sideNums=FFFFFF&hide_border=true" width="100%" />
+</p>
+
+---
+
+## 🏗️ ARCHITECTURAL ACTIVITY
+<p align="center">
+  <!-- Dynamic Metrics Card -->
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sommayadeep&theme=transparent" width="100%" />
+</p>
+
+---
+
+## 🐍 THE CONTRIBUTION OVERRIDE
+<p align="center">
+  <!-- The Snake is the centerpiece of the animation -->
+  <img src="https://raw.githubusercontent.com/sommayadeep/sommayadeep/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation" width="90%" />
+</p>
+
+---
+
+## 📂 PROJECT QUANTUM DRIVE
+<table border="0" width="100%">
+<tr>
+<td>
+
+### 💠 `PROJ_01: SAAS_CORE`
+> **STATUS:** `ACTIVE`  
+> **STACK:** `NEXT.JS / AWS`  
+> [📂 ACCESS REPOSITORY](#)
+
+</td>
+<td>
+
+### 💠 `PROJ_02: AI_MATRIX`
+> **STATUS:** `STABLE`  
+> **STACK:** `PY / LANGCHAIN`  
+> [📂 ACCESS REPOSITORY](#)
+
+</td>
+</tr>
+</table>
+
+---
+
+## 📡 TERMINAL UPLINK
+<p align="center">
+<a href="https://linkedin.com/in/sommayadeep-saha"><img src="https://img.shields.io/badge/—_LINKEDIN_—-00FFD1?style=for-the-badge&logo=linkedin&logoColor=black" /></a>
+<a href="mailto:sommayadeepsaha@gmail.com"><img src="https://img.shields.io/badge/—_EMAIL_—-00FFD1?style=for-the-badge&logo=gmail&logoColor=black" /></a>
+<a href="https://twitter.com/sommayadeep"><img src="https://img.shields.io/badge/—_TWITTER_—-00FFD1?style=for-the-badge&logo=x&logoColor=black" /></a>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%" height="4px" />
+</p>
 
 </div>
