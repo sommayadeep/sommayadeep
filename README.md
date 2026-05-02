@@ -1,63 +1,68 @@
 <div align="center">
 
-<!-- ANIMATED FLOATING HEADER -->
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=45&pause=1000&color=00FFD1&center=true&vCenter=true&width=1000&height=100&lines=SOMMAYADEEP+SAHA;SYSTEM+ARCHITECT+v2.6;ENCRYPTING+REALITY...;" />
+# 🌌 SOMMAYADEEP SAHA
+### <code>[ SENIOR SYSTEM ARCHITECT ]</code>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%" height="4px" />
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%" height="3px" />
 </p>
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=32&pause=1000&color=00FFD1&center=true&vCenter=true&width=900&lines=INITIATING+SECURE+UPLINK...;DECODING+FULL-STACK+ARCHITECTURE...;SYSTEMS+NOMINAL.+WELCOME+COMMANDER.;)](https://git.io/typing-svg)
 
 ---
 
-## ⚡ SYSTEM STATUS: OPERATIONAL
-<p align="center">
-  <img src="https://img.shields.io/badge/FLUX_CAPACITOR-ACTIVE-00FFD1?style=for-the-badge&logo=probot&logoColor=black" />
-  <img src="https://img.shields.io/badge/UPTIME-100%25-00FFD1?style=for-the-badge&logo=statuspage&logoColor=black" />
-  <img src="https://img.shields.io/badge/SECURITY-LEVEL_A-00FFD1?style=for-the-badge&logo=fortinet&logoColor=black" />
-</p>
-
----
-
-## 🛠️ NEURAL TECH STACK
-<!-- Animated Skill Icons that "pulse" or pop when hovered -->
-<p align="center">
-  <a href="#"><img src="https://skillicons.dev/icons?i=react,nextjs,ts,tailwind,threejs,nodejs,express,mongodb,postgres,go,docker,aws,kubernetes,git,figma,py&perline=8" /></a>
-</p>
-
----
-
-## 📊 LIVE DATALINK (SYNCED)
-<table border="0">
+## ⚡ CORE CAPABILITIES (OS LOADING...)
+<!-- Using progress bars makes your skills look like a loading system -->
+<table border="0" width="100%">
   <tr>
     <td width="50%">
-      <!-- Animated Activity Graph -->
-      <img src="https://github-readme-activity-graph.vercel.app/graph?username=sommayadeep&bg_color=0D1117&color=00FFD1&line=00FFD1&point=FFFFFF&area=true&hide_border=true" width="100%" />
+      <b>FRONTEND ARCHITECTURE</b><br>
+      <img src="https://geps.dev/progress/95?dangerColor=00FFD1&warningColor=00FFD1&successColor=00FFD1" width="90%" />
     </td>
     <td width="50%">
-      <!-- Top Languages with Neon Theme -->
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sommayadeep&layout=compact&theme=vision-glow&hide_border=true&title_color=00FFD1" width="100%" />
+      <b>BACKEND SYSTEMS</b><br>
+      <img src="https://geps.dev/progress/92?dangerColor=00FFD1&warningColor=00FFD1&successColor=00FFD1" width="90%" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <b>CLOUD & DEVOPS</b><br>
+      <img src="https://geps.dev/progress/88?dangerColor=00FFD1&warningColor=00FFD1&successColor=00FFD1" width="90%" />
+    </td>
+    <td width="50%">
+      <b>DATABASE MANAGEMENT</b><br>
+      <img src="https://geps.dev/progress/90?dangerColor=00FFD1&warningColor=00FFD1&successColor=00FFD1" width="90%" />
     </td>
   </tr>
 </table>
 
+---
+
+## 🛰️ GLOBAL METRICS & ANALYTICS
+<!-- Using a high-density, horizontal glassmorphism layout -->
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sommayadeep&theme=vision-glow&fire=00FFD1&currStreakNum=00FFD1&sideNums=FFFFFF&hide_border=true" width="100%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=sommayadeep&show_icons=true&theme=transparent&hide_border=true&title_color=00FFD1&text_color=FFFFFF&icon_color=00FFD1" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sommayadeep&layout=compact&theme=transparent&hide_border=true&title_color=00FFD1&text_color=FFFFFF" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sommayadeep&theme=transparent&fire=00FFD1&currStreakNum=00FFD1&sideNums=FFFFFF&hide_border=true" width="100%" />
 </p>
 
 ---
 
-## 🏗️ ARCHITECTURAL ACTIVITY
+## 🛠️ THE TECH ECOSYSTEM
+<!-- Grouped in a sleek, organized grid -->
 <p align="center">
-  <!-- Dynamic Metrics Card -->
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sommayadeep&theme=transparent" width="100%" />
+  <img src="https://skillicons.dev/icons?i=react,nextjs,ts,tailwind,threejs,nodejs,express,mongodb,postgres,go,docker,aws,kubernetes,git,figma,py&perline=8" />
 </p>
 
 ---
 
-## 🐍 THE CONTRIBUTION OVERRIDE
+## 🐍 CONTRIBUTION DYNAMICS
+<!-- Centralized and large for impact -->
 <p align="center">
-  <!-- The Snake is the centerpiece of the animation -->
-  <img src="https://raw.githubusercontent.com/sommayadeep/sommayadeep/output/github-contribution-grid-snake-dark.svg" alt="Snake Animation" width="90%" />
+  <img src="https://raw.githubusercontent.com/sommayadeep/sommayadeep/output/github-contribution-grid-snake-dark.svg" alt="Snake" width="100%" />
 </p>
 
 ---
@@ -65,36 +70,34 @@
 ## 📂 PROJECT QUANTUM DRIVE
 <table border="0" width="100%">
 <tr>
-<td>
-
-### 💠 `PROJ_01: SAAS_CORE`
-> **STATUS:** `ACTIVE`  
-> **STACK:** `NEXT.JS / AWS`  
-> [📂 ACCESS REPOSITORY](#)
-
+<td width="50%">
+  
+### 💠 [SAAS_SYSTEM_V2]
+> `STATUS: STABLE`  
+> `TECH: NEXT.JS / AWS`  
+> [**OPEN REPOSITORY**](https://github.com/sommayadeep)
 </td>
-<td>
+<td width="50%">
 
-### 💠 `PROJ_02: AI_MATRIX`
-> **STATUS:** `STABLE`  
-> **STACK:** `PY / LANGCHAIN`  
-> [📂 ACCESS REPOSITORY](#)
-
+### 💠 [AI_LOGIC_NODE]
+> `STATUS: PROCESSING`  
+> `TECH: PYTHON / OPENAI`  
+> [**OPEN REPOSITORY**](https://github.com/sommayadeep)
 </td>
 </tr>
 </table>
 
 ---
 
-## 📡 TERMINAL UPLINK
+## 📡 SECURE UPLINK
 <p align="center">
-<a href="https://linkedin.com/in/sommayadeep-saha"><img src="https://img.shields.io/badge/—_LINKEDIN_—-00FFD1?style=for-the-badge&logo=linkedin&logoColor=black" /></a>
-<a href="mailto:sommayadeepsaha@gmail.com"><img src="https://img.shields.io/badge/—_EMAIL_—-00FFD1?style=for-the-badge&logo=gmail&logoColor=black" /></a>
-<a href="https://twitter.com/sommayadeep"><img src="https://img.shields.io/badge/—_TWITTER_—-00FFD1?style=for-the-badge&logo=x&logoColor=black" /></a>
+<a href="https://linkedin.com/in/sommayadeep-saha"><img src="https://img.shields.io/badge/—_LINKEDIN_—-000000?style=for-the-badge&logo=linkedin&logoColor=00FFD1" /></a>
+<a href="mailto:sommayadeepsaha@gmail.com"><img src="https://img.shields.io/badge/—_EMAIL_—-000000?style=for-the-badge&logo=gmail&logoColor=00FFD1" /></a>
+<a href="https://twitter.com/sommayadeep"><img src="https://img.shields.io/badge/—_TWITTER_—-000000?style=for-the-badge&logo=x&logoColor=00FFD1" /></a>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%" height="4px" />
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%" height="3px" />
 </p>
 
 </div>
