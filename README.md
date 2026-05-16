@@ -58,22 +58,13 @@
 <p align="center">
 
 <img 
-  src="https://github-readme-stats.vercel.app/api?username=sommayadeep&show_icons=true&theme=transparent&hide_border=true&title_color=00FFD1&text_color=FFFFFF&icon_color=00FFD1&rank_icon=github"
+  src="https://github-readme-stats.vercel.app/api?username=sommayadeep&show_icons=true&theme=tokyonight&hide_border=true&title_color=00FFD1&icon_color=00FFD1&text_color=FFFFFF&bg_color=00000000"
   width="49%"
 />
 
 <img 
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=sommayadeep&layout=compact&theme=transparent&hide_border=true&title_color=00FFD1&text_color=FFFFFF"
+  src="https://github-readme-stats.vercel.app/api/top-langs/?username=sommayadeep&layout=compact&theme=tokyonight&hide_border=true&title_color=00FFD1&text_color=FFFFFF&bg_color=00000000"
   width="49%"
-/>
-
-</p>
-
-<p align="center">
-
-<img 
-  src="https://streak-stats.demolab.com?user=sommayadeep&theme=transparent&hide_border=true&ring=00FFD1&fire=00FFD1&currStreakLabel=00FFD1"
-  width="95%"
 />
 
 </p>
