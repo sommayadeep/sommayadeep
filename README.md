@@ -69,15 +69,6 @@
 
 </p>
 
-<p align="center">
-
-<img 
-  src="https://streak-stats.demolab.com?user=sommayadeep&theme=tokyonight&hide_border=true&ring=00FFD1&fire=00FFD1&currStreakLabel=00FFD1"
-  width="95%"
-/>
-
-</p>
-
 ---
 
 # 🛠️ THE TECH ECOSYSTEM
@@ -166,37 +157,6 @@ TYPE: Predictive Maintenance
 </tr>
 
 </table>
-
----
-
-# 📈 SYSTEM PERFORMANCE
-
-<p align="center">
-
-<img 
-  src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sommayadeep&theme=github_dark"
-/>
-
-</p>
-
-<p align="center">
-
-<img 
-  src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sommayadeep&theme=github_dark"
-  width="32%"
-/>
-
-<img 
-  src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sommayadeep&theme=github_dark"
-  width="32%"
-/>
-
-<img 
-  src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sommayadeep&theme=github_dark"
-  width="32%"
-/>
-
-</p>
 
 ---
 
