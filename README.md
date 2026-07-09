@@ -83,12 +83,12 @@
 
 ---
 
-# 🐍 CONTRIBUTION DYNAMICS
+# 👾 PACMAN CONTRIBUTION MATRIX
 
 <p align="center">
 
-<img 
-  src="https://raw.githubusercontent.com/sommayadeep/sommayadeep/output/github-contribution-grid-snake-dark.svg"
+<img
+  src="https://raw.githubusercontent.com/sommayadeep/sommayadeep/output/pacman-contribution-graph-dark.svg"
   width="100%"
 />
 
