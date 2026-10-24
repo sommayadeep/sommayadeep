@@ -64,7 +64,7 @@ I build machine learning models and the full-stack products around them.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=sommayadeep&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=10b981&icon_color=10b981&text_color=c9d1d9&ring_color=10b981" height="165" alt="GitHub Stats">
+<img src="https://github-readme-stats.vercel.app/api?username=sommayadeep&show_icons=true&hide_rank=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=10b981&icon_color=10b981&text_color=c9d1d9&ring_color=10b981" height="165" alt="GitHub Stats">
 &nbsp;&nbsp;
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sommayadeep&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=10b981&text_color=c9d1d9&langs_count=6" height="165" alt="Top Languages">
 
