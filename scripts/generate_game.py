@@ -210,22 +210,23 @@ def make_svg(grid, total):
                     f'<animate attributeName="opacity" values=".55;1;.55" dur="2.4s" begin="-{phase:.2f}s" repeatCount="indefinite"/></circle>'
                 )
                 lines.append(
-                    f'<path d="M{cx:g} {ship_y} L{cx:g} {cy:g}" stroke="url(#laser)" stroke-width="1.5" opacity="0" filter="url(#glow)">'
-                    f'<animate attributeName="opacity" values="0;1;0" dur="{loop}s" begin="{(col * .16 + row * .025):.2f}s" repeatCount="indefinite"/></path>'
+                    f'<path d="M{cx:g} {ship_y} L{cx:g} {cy:g}" stroke="url(#laser)" stroke-width="1.5" opacity=".12" filter="url(#glow)">'
+                    f'<animate attributeName="opacity" values=".12;1;.12" dur="{loop}s" begin="{(col * .16 + row * .025):.2f}s" repeatCount="indefinite"/></path>'
                 )
                 lines.append(
-                    f'<circle cx="{cx:g}" cy="{cy:g}" r="2" fill="none" stroke="#fff1a8" opacity="0">'
+                    f'<circle cx="{cx:g}" cy="{cy:g}" r="2" fill="none" stroke="#fff1a8" opacity=".25">'
                     f'<animate attributeName="r" values="2;11;2" dur="{loop}s" begin="{(col * .16 + row * .025 + .08):.2f}s" repeatCount="indefinite"/>'
-                    f'<animate attributeName="opacity" values="0;1;0" dur="{loop}s" begin="{(col * .16 + row * .025 + .08):.2f}s" repeatCount="indefinite"/></circle>'
+                    f'<animate attributeName="opacity" values=".25;1;.25" dur="{loop}s" begin="{(col * .16 + row * .025 + .08):.2f}s" repeatCount="indefinite"/></circle>'
                 )
 
     # The defender tracks the latest active column while firing upward.
     lines += [
         f'<path d="M{PAD_L} {ship_y + 8} H{PAD_L + GRID_W}" stroke="#ff4f68" stroke-width="1" stroke-dasharray="2 5" opacity=".45"/>',
-        f'<g filter="url(#glow)"><path d="M-13 {ship_y + 7} L0 {ship_y - 8} L13 {ship_y + 7} L7 {ship_y + 5} L0 {ship_y + 11} L-7 {ship_y + 5} Z" fill="url(#ship)">'
-        f'<animate attributeName="transform" values="translate({PAD_L + 20},0);translate({PAD_L + GRID_W - 20},0);translate({PAD_L + 20},0)" dur="{loop}s" repeatCount="indefinite"/></path>'
+        f'<g transform="translate({PAD_L + 20},0)" filter="url(#glow)">'
+        f'<animateTransform attributeName="transform" type="translate" values="{PAD_L + 20},0;{PAD_L + GRID_W - 20},0;{PAD_L + 20},0" dur="{loop}s" repeatCount="indefinite"/>'
+        f'<path d="M-13 {ship_y + 7} L0 {ship_y - 8} L13 {ship_y + 7} L7 {ship_y + 5} L0 {ship_y + 11} L-7 {ship_y + 5} Z" fill="url(#ship)"/>'
         f'<path d="M0 {ship_y - 7} V{PAD_T - 2}" stroke="#fff1a8" stroke-width="2" opacity=".9">'
-        f'<animate attributeName="transform" values="translate({PAD_L + 20},0);translate({PAD_L + GRID_W - 20},0);translate({PAD_L + 20},0)" dur="{loop}s" repeatCount="indefinite"/></path></g>',
+        f'<animate attributeName="opacity" values=".35;1;.35" dur="1.1s" repeatCount="indefinite"/></path></g>',
     ]
 
     bar_y = SVG_H - 25
