@@ -1,18 +1,35 @@
 <svg viewBox="0 0 650 494" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<mask id="reveal">
-<rect x="0" y="0" width="650" height="0" fill="#fff">
-<animate attributeName="height" from="0" to="494" dur="1.8s" begin="0s" fill="freeze" calcMode="spline" keySplines="0.22 0.61 0.36 1"/>
-</rect>
-</mask>
-<linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
-<stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/>
-<stop offset="50%" stop-color="#bfe9f2" stop-opacity="0.95"/>
-<stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
-</linearGradient>
+  <mask id="angledReveal">
+    <rect width="650" height="494" fill="#000"/>
+    <g transform="translate(325,247) rotate(-26)">
+      <rect x="-550.0" y="-440" width="1100" height="0" fill="#fff">
+        <animate attributeName="height" from="0" to="880" dur="1.9s" begin="0s" fill="freeze" calcMode="spline" keySplines="0.22 0.61 0.36 1"/>
+      </rect>
+    </g>
+  </mask>
+
+  <!-- Dual-layer Cyber Blade Gradients -->
+  <linearGradient id="cyberBlade" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#3b82f6" stop-opacity="0"/>
+    <stop offset="45%" stop-color="#3b82f6" stop-opacity="0.3"/>
+    <stop offset="75%" stop-color="#22d3ee" stop-opacity="0.85"/>
+    <stop offset="95%" stop-color="#e0faff" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.2"/>
+  </linearGradient>
+
+  <linearGradient id="bladeTrail" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#6366f1" stop-opacity="0"/>
+    <stop offset="60%" stop-color="#3b82f6" stop-opacity="0.25"/>
+    <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+  </linearGradient>
 </defs>
+
+<!-- Dark Mode Background matching #0d1117 -->
 <rect width="650" height="494" fill="#0d1117"/>
-<g mask="url(#reveal)">
+
+<!-- Revealed Dot Matrix Portrait -->
+<g mask="url(#angledReveal)">
 <circle cx="304.7" cy="15.5" r="1.24" fill="#44413d"/>
 <circle cx="310.2" cy="15.5" r="1.21" fill="#3a3a38"/>
 <circle cx="315.7" cy="15.5" r="1.3" fill="#4e4741"/>
@@ -3268,8 +3285,27 @@
 <circle cx="628.6" cy="464.0" r="2.2" fill="#272c31"/>
 <circle cx="634.1" cy="464.0" r="1.72" fill="#292d32"/>
 </g>
-<rect x="0" y="-24.0" width="650" height="24.0" fill="url(#scanGrad)">
-<animate attributeName="y" from="-24.0" to="494" dur="1.8s" begin="0s" fill="freeze" calcMode="spline" keySplines="0.22 0.61 0.36 1"/>
-<animate attributeName="opacity" values="1;1;0" keyTimes="0;0.85;1" dur="1.8s" begin="0s" fill="freeze"/>
-</rect>
+
+<!-- Animated Angled Cyber Blade & Dual Trail -->
+<g transform="translate(325,247) rotate(-26)">
+  <!-- Soft Indigo/Electric Blue Trailing Glow -->
+  <rect x="-550.0" y="-485" width="1100" height="70" fill="url(#bladeTrail)">
+    <animate attributeName="y" from="-485" to="395" dur="1.9s" begin="0s" fill="freeze" calcMode="spline" keySplines="0.22 0.61 0.36 1"/>
+    <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.88;1" dur="1.9s" begin="0s" fill="freeze"/>
+  </rect>
+
+  <!-- Razor-Sharp Cyan/White Blade Beam -->
+  <rect x="-550.0" y="-440" width="1100" height="36" fill="url(#cyberBlade)">
+    <animate attributeName="y" from="-440" to="440" dur="1.9s" begin="0s" fill="freeze" calcMode="spline" keySplines="0.22 0.61 0.36 1"/>
+    <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.88;1" dur="1.9s" begin="0s" fill="freeze"/>
+  </rect>
+</g>
+
+<!-- Subtle Futuristic HUD Corner Brackets -->
+<g stroke="#22d3ee" stroke-width="1.5" fill="none" opacity="0.35">
+  <path d="M 16 32 L 16 16 L 32 16" />
+  <path d="M 618 16 L 634 16 L 634 32" />
+  <path d="M 16 462 L 16 478 L 32 478" />
+  <path d="M 618 478 L 634 478 L 634 462" />
+</g>
 </svg>
