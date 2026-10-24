@@ -16,7 +16,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 USERNAME = os.environ.get("GITHUB_USERNAME", "sommayadeep")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
-OUT_PATH = "assets/contribution-game.gif"
+OUT_PATH = "assets/contribution-graph.gif"
 
 CELL = 13
 GAP = 2

@@ -78,7 +78,7 @@ I build machine learning models and the full-stack products around them.
 
 <div align="center">
 
-<img src="assets/contribution-game.gif" alt="Animated GitHub contribution graph" width="100%">
+<img src="assets/contribution-graph.gif" alt="Animated GitHub contribution graph" width="100%">
 
 </div>
 
