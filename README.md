@@ -78,7 +78,7 @@ I build machine learning models and the full-stack products around them.
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=sommayadeep&theme=github-compact&bg_color=0d1117&color=10b981&line=10b981&point=a3e635&hide_border=true" alt="Contribution Graph" width="100%">
+<img src="assets/contribution-game.svg" alt="Commit Cannon — Contribution Game" width="100%">
 
 </div>
 
