@@ -2,7 +2,7 @@
 
 <img src="assets/header.svg" alt="Sommayadeep Saha, AI/ML and Full-Stack Developer" width="100%">
 
-<img src="assets/portrait-dots.gif" alt="Portrait of Sommayadeep Saha" width="380">
+<img src="assets/portrait.svg" width="380" alt="Sommayadeep Saha">
 <br>
 <img src="assets/divider.svg" alt="" width="380">
 
