@@ -9,10 +9,9 @@ The output is self-contained SVG so it remains animated in a GitHub README.
 import os
 import random
 import re
-import math
 from datetime import date, timedelta
 import requests
-from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from PIL import Image, ImageDraw, ImageFont
 
 
 USERNAME = os.environ.get("GITHUB_USERNAME", "sommayadeep")
@@ -155,70 +154,41 @@ def signal_color(count):
 
 
 def make_gif(grid, total):
-    """Render a real frame-by-frame arcade game that GitHub plays as a GIF."""
-    random.seed(7)
+    """Render a restrained, frame-by-frame contribution graph reveal."""
     frames = []
-    frame_count = 24
-    ship_y = PAD_T + GRID_H + 17
-    active = [
-        (col, row, day["count"])
-        for col, week in enumerate(grid)
-        for row, day in enumerate(week)
-        if day["count"]
-    ]
-    stars = [(random.randrange(SVG_W), random.randrange(45, SVG_H - 25)) for _ in range(55)]
+    frame_count = COLS + 8
     font = ImageFont.load_default()
 
     for frame_no in range(frame_count):
-        image = Image.new("RGB", (SVG_W, SVG_H), "#0b0d18")
+        image = Image.new("RGB", (SVG_W, SVG_H), "#0d1117")
         draw = ImageDraw.Draw(image)
-        draw.rounded_rectangle((0, 0, SVG_W - 1, SVG_H - 1), radius=10, fill="#0d1020", outline="#3b1c3d")
-        for x, y in stars:
-            draw.point((x, y), fill="#71658a")
+        draw.rounded_rectangle((0, 0, SVG_W - 1, SVG_H - 1), radius=10, fill="#0d1117", outline="#30363d")
+        draw.text((PAD_L, 14), f"{total:,} contributions", fill="#f0f6fc", font=font)
+        draw.text((SVG_W - PAD_L - 105, 14), f"@{USERNAME}", fill="#8b949e", font=font)
+        draw.text((PAD_L, 30), "Less", fill="#8b949e", font=font)
+        draw.text((SVG_W - PAD_L - 25, 30), "More", fill="#8b949e", font=font)
+        for level, color in enumerate(("#161b22", "#0e4429", "#006d32", "#26a641", "#39d353")):
+            x = SVG_W - PAD_L - 70 + level * 15
+            draw.rounded_rectangle((x, 29, x + 11, 40), radius=2, fill=color)
 
-        draw.text((PAD_L, 14), "COMMIT DEFENDER", fill="#ffd35a", font=font)
-        draw.text((SVG_W - PAD_L - 92, 14), f"SCORE {total:04d}", fill="#ff6684", font=font)
-        draw.text((PAD_L, 29), "REAL CONTRIBUTIONS // WAVE 01", fill="#b88fc9", font=font)
-        draw.text((SVG_W - PAD_L - 75, 29), f"TARGETS {len(active):03d}", fill="#ffd35a", font=font)
-        draw.line((PAD_L, 43, SVG_W - PAD_L, 43), fill="#8a3153", width=1)
-
-        for row, label in enumerate(("MON", "", "WED", "", "FRI", "", "SUN")):
-            if label:
-                draw.text((5, PAD_T + row * STEP + 3), label, fill="#b88fc9", font=font)
-
+        revealed_col = min(COLS, frame_no)
         for col, week in enumerate(grid):
             for row, day in enumerate(week):
-                x, y, count = PAD_L + col * STEP, PAD_T + row * STEP, day["count"]
-                draw.rounded_rectangle((x, y, x + CELL, y + CELL), radius=3, fill=level_color(count))
+                x, y = PAD_L + col * STEP, PAD_T + row * STEP
+                fill = level_color(day["count"]) if col < revealed_col else "#161b22"
+                draw.rounded_rectangle((x, y, x + CELL, y + CELL), radius=2, fill=fill)
 
-        ship_x = PAD_L + 15 + int((GRID_W - 30) * (0.5 + 0.5 * math.sin(frame_no / frame_count * math.tau)))
-        for index, (col, row, count) in enumerate(active):
-            target_x = PAD_L + col * STEP + CELL // 2
-            target_y = PAD_T + row * STEP + CELL // 2
-            hit_frame = (col * 3 + row * 5) % frame_count
-            distance = (frame_no - hit_frame) % frame_count
-            if distance < 7:
-                progress = min(1, distance / 4)
-                laser_y = ship_y - (ship_y - target_y) * progress
-                draw.line((ship_x, ship_y - 7, target_x, laser_y), fill="#ffb52e", width=2)
-                if distance >= 4:
-                    radius = 3 + (distance - 4) * 3
-                    draw.ellipse((target_x - radius, target_y - radius, target_x + radius, target_y + radius), outline="#fff1a8", width=2)
-
-        ship = [(ship_x - 13, ship_y + 7), (ship_x, ship_y - 9), (ship_x + 13, ship_y + 7), (ship_x + 5, ship_y + 5), (ship_x, ship_y + 11), (ship_x - 5, ship_y + 5)]
-        draw.polygon(ship, fill="#ff7955", outline="#ffd35a")
-        draw.line((ship_x, ship_y - 7, ship_x, PAD_T - 2), fill="#fff1a8", width=1)
-        draw.line((PAD_L, ship_y + 12, PAD_L + GRID_W, ship_y + 12), fill="#8a3153", width=1)
-        draw.text((PAD_L, SVG_H - 23), "HULL 100%", fill="#ff9a9f", font=font)
-        draw.text((SVG_W // 2 - 68, SVG_H - 23), "LASER ONLINE", fill="#ffd35a", font=font)
-        draw.text((SVG_W - PAD_L - 60, SVG_H - 23), USERNAME, fill="#ff9a9f", font=font)
-        draw.text((PAD_L, SVG_H - 11), "COMMIT POWER", fill="#85658f", font=font)
-        draw.rounded_rectangle((PAD_L + 72, SVG_H - 12, PAD_L + 170, SVG_H - 6), radius=3, fill="#35162d")
-        draw.rounded_rectangle((PAD_L + 72, SVG_H - 12, PAD_L + 125 + (frame_no % 8) * 6, SVG_H - 6), radius=3, fill="#ff536d")
+        if revealed_col < COLS:
+            sweep_x = PAD_L + revealed_col * STEP + CELL // 2
+            draw.line((sweep_x, PAD_T - 5, sweep_x, PAD_T + GRID_H + 5), fill="#58a6ff", width=1)
+        else:
+            draw.line((PAD_L, PAD_T + GRID_H + 13, PAD_L + GRID_W, PAD_T + GRID_H + 13), fill="#30363d", width=1)
+            draw.text((PAD_L, SVG_H - 22), "updated from GitHub contribution activity", fill="#8b949e", font=font)
+            draw.text((SVG_W - PAD_L - 62, SVG_H - 22), "github.com", fill="#58a6ff", font=font)
         frames.append(image)
 
     os.makedirs("assets", exist_ok=True)
-    frames[0].save(OUT_PATH, save_all=True, append_images=frames[1:], duration=100, loop=0, optimize=False)
+    frames[0].save(OUT_PATH, save_all=True, append_images=frames[1:], duration=55, loop=0, optimize=False)
     return len(frames)
 
 
