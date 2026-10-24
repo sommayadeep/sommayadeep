@@ -156,7 +156,8 @@ def signal_color(count):
 def make_gif(grid, total):
     """Render a restrained, frame-by-frame contribution graph reveal."""
     frames = []
-    frame_count = COLS + 8
+    # Two frames per column keep the sweep smooth without making the reveal drag.
+    frame_count = COLS * 2 + 12
     font = ImageFont.load_default()
 
     for frame_no in range(frame_count):
@@ -171,7 +172,7 @@ def make_gif(grid, total):
             x = SVG_W - PAD_L - 70 + level * 15
             draw.rounded_rectangle((x, 29, x + 11, 40), radius=2, fill=color)
 
-        revealed_col = min(COLS, frame_no)
+        revealed_col = min(COLS, frame_no // 2)
         for col, week in enumerate(grid):
             for row, day in enumerate(week):
                 x, y = PAD_L + col * STEP, PAD_T + row * STEP
@@ -179,7 +180,7 @@ def make_gif(grid, total):
                 draw.rounded_rectangle((x, y, x + CELL, y + CELL), radius=2, fill=fill)
 
         if revealed_col < COLS:
-            sweep_x = PAD_L + revealed_col * STEP + CELL // 2
+            sweep_x = PAD_L + (frame_no / 2) * STEP + CELL // 2
             draw.line((sweep_x, PAD_T - 5, sweep_x, PAD_T + GRID_H + 5), fill="#58a6ff", width=1)
         else:
             draw.line((PAD_L, PAD_T + GRID_H + 13, PAD_L + GRID_W, PAD_T + GRID_H + 13), fill="#30363d", width=1)
@@ -188,7 +189,7 @@ def make_gif(grid, total):
         frames.append(image)
 
     os.makedirs("assets", exist_ok=True)
-    frames[0].save(OUT_PATH, save_all=True, append_images=frames[1:], duration=55, loop=0, optimize=False)
+    frames[0].save(OUT_PATH, save_all=True, append_images=frames[1:], duration=70, loop=0, optimize=False)
     return len(frames)
 
 
