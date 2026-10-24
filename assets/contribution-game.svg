@@ -70,7 +70,7 @@
 <circle cx="767" cy="48" r="0.5" fill="#93c5fd" opacity="0.33"/>
 <circle cx="808" cy="178" r="0.5" fill="#93c5fd" opacity="0.21"/>
 <text x="30" y="23" font-family="JetBrains Mono,SFMono-Regular,Consolas,monospace" font-size="11" fill="#8fffe0" letter-spacing="1.5" filter="url(#smallGlow)">NEURAL_CONSTELLATION</text>
-<text x="810" y="22" text-anchor="end" font-family="JetBrains Mono,SFMono-Regular,Consolas,monospace" font-size="9" fill="#65d9c0" opacity=".85">SIGNALS: 287</text>
+<text x="810" y="22" text-anchor="end" font-family="JetBrains Mono,SFMono-Regular,Consolas,monospace" font-size="9" fill="#65d9c0" opacity=".85">SIGNALS: 288</text>
 <text x="30" y="38" font-family="monospace" font-size="7" fill="#75a9bb" letter-spacing="1">GITHUB ACTIVITY // LIVE ORBITAL MAP</text>
 <line x1="30" y1="44" x2="810" y2="44" stroke="#40d7b5" stroke-width=".5" opacity=".35"/>
 <text x="23" y="66" text-anchor="end" font-family="monospace" font-size="6.5" fill="#71a5b2" opacity=".75">MON</text>
