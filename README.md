@@ -78,7 +78,7 @@ I build machine learning models and the full-stack products around them.
 
 <div align="center">
 
-<img src="assets/contribution-game.svg" alt="Neural Constellation — animated contribution game" width="100%">
+<img src="assets/contribution-game.svg" alt="Commit Defender — animated contribution shooting game" width="100%">
 
 </div>
 
