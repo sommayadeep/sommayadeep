@@ -8,6 +8,8 @@ The output is self-contained SVG so it remains animated in a GitHub README.
 
 import os
 import random
+import re
+from datetime import date, timedelta
 import requests
 
 
@@ -48,33 +50,84 @@ QUERY = """
 
 
 def fetch_contributions():
-    if not TOKEN:
-        return None, 0
+    if TOKEN:
+        try:
+            response = requests.post(
+                "https://api.github.com/graphql",
+                json={"query": QUERY},
+                headers={"Authorization": f"bearer {TOKEN}"},
+                timeout=15,
+            )
+            response.raise_for_status()
+            calendar = response.json()["data"]["user"]["contributionsCollection"][
+                "contributionCalendar"
+            ]
+            return normalize_days(
+                [
+                    (day["date"], day["contributionCount"])
+                    for week in calendar["weeks"]
+                    for day in week["contributionDays"]
+                ],
+                calendar["totalContributions"],
+            )
+        except (KeyError, TypeError, ValueError, requests.RequestException) as error:
+            print(f"[warn] GraphQL fetch failed: {error}")
+
+    # GitHub renders the same real calendar publicly, so local generation does
+    # not need a token and never has to invent contribution data.
     try:
-        response = requests.post(
-            "https://api.github.com/graphql",
-            json={"query": QUERY},
-            headers={"Authorization": f"bearer {TOKEN}"},
+        response = requests.get(
+            f"https://github.com/users/{USERNAME}/contributions",
             timeout=15,
         )
         response.raise_for_status()
-        calendar = response.json()["data"]["user"]["contributionsCollection"][
-            "contributionCalendar"
-        ]
-        grid = []
-        for week in calendar["weeks"][:COLS]:
-            column = [
-                {"count": day["contributionCount"], "color": day["color"]}
-                for day in week["contributionDays"]
-            ]
-            column.extend({"count": 0, "color": "#111827"} for _ in range(ROWS - len(column)))
-            grid.append(column)
-        while len(grid) < COLS:
-            grid.append([{"count": 0, "color": "#111827"} for _ in range(ROWS)])
-        return grid, calendar["totalContributions"]
-    except (KeyError, TypeError, ValueError, requests.RequestException) as error:
-        print(f"[warn] API fetch failed: {error}")
-        return None, 0
+        page = response.text
+        total_match = re.search(
+            r'id="js-contribution-activity-description"[^>]*>\s*([\d,]+)',
+            page,
+        )
+        if not total_match:
+            raise ValueError("public calendar total was not found")
+        cells = re.findall(
+            r'<td[^>]*data-date="([^"]+)"[^>]*data-level="(\d+)"[^>]*></td>'
+            r'\s*<tool-tip[^>]*>(.*?)</tool-tip>',
+            page,
+            flags=re.DOTALL,
+        )
+        if not cells:
+            raise ValueError("public calendar cells were not found")
+        days = []
+        for day_date, level, tooltip in cells:
+            count_match = re.search(r"(\d[\d,]*) contributions?", tooltip)
+            count = int(count_match.group(1).replace(",", "")) if count_match else 0
+            days.append((day_date, count if count else int(level) and level_count(int(level))))
+        return normalize_days(days, int(total_match.group(1).replace(",", "")))
+    except (ValueError, requests.RequestException) as error:
+        raise RuntimeError(f"unable to fetch real GitHub contributions: {error}") from error
+
+
+def level_count(level):
+    """Keep the public calendar useful if GitHub omits tooltip text."""
+    return (0, 1, 3, 6, 12)[min(level, 4)]
+
+
+def normalize_days(days, total):
+    """Turn dated contribution cells into the fixed 52 x 7 game grid."""
+    parsed = {(date.fromisoformat(day_date), count) for day_date, count in days}
+    latest = max(day_date for day_date, _ in parsed)
+    first_week = latest - timedelta(days=latest.weekday() + 7 * (COLS - 1))
+    grid = []
+    for week in range(COLS):
+        column = []
+        week_start = first_week + timedelta(days=week * 7)
+        for row in range(ROWS):
+            count = next(
+                (value for day_date, value in parsed if day_date == week_start + timedelta(days=row)),
+                0,
+            )
+            column.append({"count": count, "color": ""})
+        grid.append(column)
+    return grid, total
 
 
 def level_color(count):
@@ -213,15 +266,6 @@ def make_svg(grid, total):
 if __name__ == "__main__":
     print(f"[*] Fetching contributions for {USERNAME}...")
     grid, total = fetch_contributions()
-    if grid is None:
-        print("[!] Using deterministic placeholder data (no API token or error).")
-        random.seed(11)
-        grid = [
-            [{"count": random.choices([0, 1, 3, 6, 12], [40, 25, 20, 10, 5])[0], "color": ""}
-             for _ in range(ROWS)]
-            for _ in range(COLS)
-        ]
-        total = sum(day["count"] for week in grid for day in week)
 
     svg = make_svg(grid, total)
     os.makedirs("assets", exist_ok=True)
